@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <h1>Your Shopping Cart</h1>
+  <nav>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      
+        <li><a href="about.html">About us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+
+ <a href="index.html" class="shopping-cart-icon">
+      <i class="fas fa-shopping-cart" style="font-size: 40px;"></i>
+    </a>
+
+  </header>
+
+  <main>
+
+
+    <div class="cart">
+      <h2>Your Cart</h2>
+
+     
+
+      <div class="cart-items" id="cart-items">
+    
+
+      </div>
+
+
+
+      <div id="total-price">
+        Total: <span id="price-value">SR 0.00</span>
+      </div>
+
+
+
+      <button class="checkout-button" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+    </div>
+
+
+
+
+
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Your Store</p>
+  </footer>
+
+  <script src="script.js" defer></script> 
+</body>
+</html>

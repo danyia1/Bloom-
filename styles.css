@@ -1,0 +1,625 @@
+body {
+   font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+background-color: #fff5f8; /* لون وردي فاتح للخلفية */
+
+
+ 
+
+
+  color: #333;
+  text-align: center;
+
+}
+ header {
+ 
+
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('images/header-bg.jpeg') no-repeat center center/cover;
+
+/*rest of pagesدنو */
+
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+
+}
+header h1 {
+  margin: 0;
+  font-size: 5rem;
+  font-weight: bold;
+font-family:"Times New Roman", Times, serif;
+text-align: center;
+}
+
+
+
+
+/*only the home page */
+
+body.home-page header {
+ 
+
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('images/header-bg.jpeg') no-repeat center center/cover;
+
+/*تعديلات الهيدر من عند دنو */
+
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+
+/*تعديلات الهيدر من عند دنو */
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 350px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+body.home-page header h1 {
+  margin: 0;
+  font-size: 8rem;
+  font-weight: bold;
+font-family:"Times New Roman", Times, serif;
+text-align: center;
+}
+
+body.home-page header h4 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+font-family:"Times New Roman", Times, serif;
+text-align: center;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: color 0.3s;
+    text-align: center;
+   
+
+}
+
+nav ul li a:hover {
+  color: #9e4646; /* لون وردي فاتح عند التمرير هنا غيرت لون اللست خليتها اغميق شوي */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ffd1e3; /* إطار وردي فاتح حول الصور */
+ width: 250px; /* العرض */
+  height: 250px; /* الطول */
+  object-fit: cover; /* لضمان احتواء الصورة بشكل متناسق */
+
+}
+
+.product p {
+  color: #555;
+  font-size: 1.5rem;
+ text-align: center;
+}
+
+
+.product h1 {
+  color: #555;
+  font-size: 1rem;
+ text-align: center;
+}
+
+
+
+.buy-btn {
+  background-color: #9e4646; /* زر وردي هنا غيرت اللون بعد وصارت اغمق شوي  اللي هو زر الشرا بصفحة  */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ text-align: center;
+}
+
+.buy-btn:hover {
+  background-color: #ff9cb3; /* لون أغمق عند التمرير */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+
+}
+
+.blog-post {
+  background-color: #fff;
+  border: 1px solid #ffd1e3;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+ text-align: center;
+
+display: flex; /* لتفعيل خصائص الفليكس */
+  flex-direction: column; /* ترتيب العناصر عمودياً */
+  align-items: center; /* توسيط العناصر أفقياً */
+  justify-content: center; /* توسيط العناصر عمودياً */
+
+
+
+}
+
+.blog-post h3 {
+  color: #9e4646; /*  عنوان البلوق لون وردي للعناوين */
+  font-size: 1.8rem;
+ text-align: center;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  line-height: 1.6;
+ text-align: center;
+}
+
+a.btn {
+  background-color: #ffccd5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+display: inline-block;
+}
+
+a.btn:hover {
+  background-color: #ff9cb3;
+}
+
+/*box text تصميم القسم الجديد */
+.gift-container {
+  background-color: #ffffff;
+ 
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 50%;
+  max-width: 400px;
+  text-align: center;
+  margin: 30px auto; /* تمركز العنصر في المنتصف */
+
+}
+
+.gift-container h3 {
+  color: #9e4646;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.gift-container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.gift-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffd1e3;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* تنسيق القسم الخاص بالدفع */
+.checkout-section {
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+
+  padding: 0px 20px; /* المسافات داخل القسم */
+  background-color: #fff5f8; /* خلفية وردية فاتحة للقسم */
+  text-align: center; /* لتوسيط المحتوى داخل القسم */
+}
+
+/* تنسيق المربع المركزي */
+.center-box {
+  background-color: #fff; /* خلفية بيضاء للمربع */
+  padding: 20px 30px; /* مسافات داخلية كبيرة */
+  border-radius: 10px; /* حواف مدورة */
+  border: 1px solid #ffd1e3; /* إطار وردي فاتح حول المربع */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف لتحسين الشكل */
+  max-width: 450px; /* تحديد أقصى عرض للمربع */
+  width: 100%; /* المربع يمتد لملء العرض المتاح */
+  text-align: left; /* جعل النص يبدأ من اليسار */
+  margin: 0 auto; /* تمركز المربع في المنتصف */
+}
+
+/* تنسيق العناوين داخل المربع */
+.center-box h3 {
+  color: #ff6f91; /* لون وردي للعناوين */
+  font-size: 1.8rem;
+  margin-bottom: 15px; /* مسافة أسفل العنوان */
+}
+
+/* تنسيق الحقول داخل المربع */
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 6px; /* مسافة تحت كل حقل */
+}
+
+input, select {
+  width: 100%;
+  padding: 8px; /* تقليل الحشو داخل الحقول */
+  margin-bottom: 12px; /* مسافة بين الحقول */
+  border: 1px solid #ffd1e3; /* إطار وردي فاتح */
+  border-radius: 5px; /* حواف مدورة للحقول */
+  font-size: 1rem;
+  box-sizing: border-box; /* تأكيد المسافات داخل الحقول */
+}
+
+/* تنسيق الزر */
+button {
+  background-color: #ffccd5; /* زر وردي */
+  color: white;
+  border: none;
+  padding: 12px 25px; /* حشو أكبر للزر */
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto 0; /* تمركز الزر أسفل النموذج */
+}
+
+button:hover {
+  background-color: #ff9cb3; /* لون أغمق عند التمرير */
+}
+
+
+
+/*تنسيق صفحة الاخبار */
+
+
+.news-images {
+  display: flex;
+  justify-content: center; /* لضبط الصور في المنتصف */
+  gap: 20px; /* المسافة بين الصور */
+}
+
+
+
+.news-image, .news-second-image {
+  width: 400px; /* تحديد العرض الثابت (يمكنك تعديله حسب الحجم المطلوب) */
+  height: auto; /* ضبط الارتفاع تلقائيًا بناءً على نسبة العرض والارتفاع */
+  object-fit: cover; /* لتناسب الصورة داخل المساحة المحددة */
+  border-radius: 10px; /* إضافة حواف مدورة */
+}
+
+
+
+.news-section {
+  width: 80%; /* عرض القسم */
+  margin: 20px auto; /* مركزي */
+  text-align: left; /* النصوص على اليسار */
+  background-color: #fff; /* خلفية بيضاء */
+  padding: 20px; /* حشو داخلي */
+  border-radius: 10px; /* حواف مدورة */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+  border: 1px solid #ffd1e3; /* إطار وردي فاتح */
+}
+
+.news-section h2 {
+  color: #9e4646; /* لون العنوان */
+  font-size: 2rem;
+  margin-bottom: 20px; /* مسافة تحت العنوان */
+text-align: center;
+}
+
+.news-item {
+  margin-bottom: 20px; /* مسافة بين المقالات */
+  padding: 10px 0; /* حشو داخلي */
+  border-bottom: 1px solid #ffd1e3; /* خط تحت كل خبر */
+}
+
+.news-item h3 {
+  font-size: 1.5rem;
+  color: #555;
+text-align: center;
+}
+
+.news-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 2;
+text-align: center;
+}
+
+.news-section {
+  width: 80%; /* عرض القسم */
+  margin: 20px auto; /* توسيط القسم */
+  background-color: #fff; /* خلفية بيضاء */
+}
+
+
+.category-grid {
+  display: grid; /* استخدام Grid Layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* تقسيم الأعمدة */
+  gap: 20px; /* مسافة بين العناصر */
+  margin: 20px;
+  text-align: center; /* محاذاة النصوص في الوسط */
+}
+
+.category {
+  position: relative; /* لضبط النص داخل الحاوية */
+  overflow: hidden; /* منع أي عنصر زائد من الخروج عن الإطار */
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* حركة سلسة عند التمرير */
+}
+
+.category:hover {
+  transform: translateY(-10px); /* رفع العنصر للأعلى */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* إضافة ظل بسيط عند التمرير */
+}
+
+.category img {
+  width: 100%; /* جعل الصورة تملأ العرض */
+  height: 250px; /* تثبيت ارتفاع الصورة */
+  object-fit: cover; /* قص الصورة لتتناسب مع الحاوية */
+  border-radius: 10px; /* زوايا دائرية متناسقة */
+  border: 2px solid #ffd1e3;
+  transition: transform 0.3s ease; /* إضافة حركة سلسة للصورة */
+}
+.category:hover img {
+  transform: scale(1.05); /* تكبير الصورة قليلاً عند التمرير */
+}
+
+.category p {
+  color: #555;
+  font-size: 1.5rem;
+  text-align: center;
+text-align: center;
+}
+
+
+.category h1 {
+  color: #555;
+  font-size: 1rem;
+ text-align: center;
+}
+
+
+/* الهوم من عند دنو */
+
+
+
+.category h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.1); 
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1;
+}
+
+
+
+
+
+
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ff5722; 
+
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.cart-icon:hover {
+    background-color: #e64a19; 
+
+    transform: scale(1.1); 
+
+}
+
+.cart-icon i {
+    font-size: 25px;
+}
+
+.cart-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #e91e63;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+    transform: translateX(5px); 
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+.cart-item-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cart-item-price {
+    font-size: 14px;
+    color: #555;
+}
+
+.cart-item-remove {
+    color: #ff5722;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.cart-item-remove:hover {
+    color: #e64a19;
+}
+
+
+
+.cart-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.cart-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart-footer .total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-footer .checkout-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-footer .checkout-btn:hover {
+    background-color: #e64a19;
+}
+
+.shopping-cart-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+
+
+}
+
+.shopping-cart-icon i {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+
+}
+
+.shopping-cart-icon i:hover {
+  transform: scale(1.1); 
+}
