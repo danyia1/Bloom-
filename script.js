@@ -23,6 +23,54 @@ if (window.location.pathname.endsWith('cart.html')) {
     displayCartItems();
 
    }
+   // إذا كنا في صفحة الدفع checkout.html
+  if (window.location.pathname.endsWith('checkout.html')) {
+    emailjs.init("YOUR_USER_ID"); // 🔄 ضع الـ Public Key من حسابك هنا
+
+    const form = document.getElementById("order-form");
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const cart = getCart();
+
+        if (cart.length === 0) {
+          alert("السلة فارغة. الرجاء إضافة منتجات.");
+          return;
+        }
+
+        const productDetails = cart
+          .map(item =>
+            `• ${item.name} × ${item.quantity} = SR ${(item.price * item.quantity).toFixed(2)}`
+          )
+          .join("\n");
+
+        const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+        const templateParams = {
+          name: form.name.value,
+          address: form.address.value,
+          country: form.country.value,
+          city: form.city.value,
+          phone: form.phone.value,
+          payment: form.payment.value,
+          products: productDetails,
+          total_price: total.toFixed(2)
+        };
+
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+          .then(() => {
+            alert("✅ تم إرسال الطلب بنجاح!");
+            localStorage.removeItem("cart");
+            window.location.href = "thankyou.html"; // يمكنك تعديل الصفحة حسب رغبتك
+          })
+          .catch(error => {
+            alert("❌ حدث خطأ أثناء إرسال الطلب");
+            console.error(error);
+          });
+      });
+    }
+  }
 });
 
 
